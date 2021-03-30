@@ -1,0 +1,2 @@
+<?pjp
+phpinfo();
