@@ -38,9 +38,9 @@ $persons = [
 // 在Javascript要將json轉成字串使用JSON.stringify(變數)
 // 將字串轉回物件使用JSON.parse(str)，需先定義str
 
-echo json_encode($persons, JSON_UNESCAPED_UNICODE);
+// echo json_encode($persons, JSON_UNESCAPED_UNICODE);
 
-// echo json_encode([
-//     'get' => $_GET,
-//     'persons' => $persons
-// ], flags: JSON_UNESCAPED_UNICODE);
+echo json_encode([
+    'get' => $_GET,
+    'persons' => $persons
+], JSON_UNESCAPED_UNICODE);
