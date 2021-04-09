@@ -8,7 +8,7 @@
 -- order by: 查詢結果的排序方式
 -- limit: 查詢結果的忽略/限制筆數
 
-
+ 
 SELECT
     COUNT(1) num,
     p.`category_sid`,
