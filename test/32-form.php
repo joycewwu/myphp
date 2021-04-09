@@ -14,22 +14,29 @@
         <div class="col-md-6">
             <form name="form1" method="post">
                 <div class="form-group">
-                    <label for="email">Email address</label>
+                    <label for="email">Email</label>
                     <input type="email" class="form-control" id="email" value="<?= empty($_POST['email']) ? '' : htmlentities($_POST['email']) ?>" name="email">
 
                 </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" value="<?= empty($_POST['password']) ? '' : htmlentities($_POST['password']) ?>" name="password">
 
-                    <!-- htmlentities 是用來跳脫字元 -->
-                </div>
-                <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1" name="check1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+                <form name="form1" method="post">
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" class="form-control" id="email" value="<?= empty($_POST['email']) ? '' : htmlentities($_POST['date']) ?>" name="date">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" value="<?= empty($_POST['password']) ? '' : htmlentities($_POST['password']) ?>" name="password">
+
+                        <!-- htmlentities 是用來跳脫字元 -->
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" name="check1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
 
 
         </div>
