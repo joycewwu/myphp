@@ -9,3 +9,4 @@ $stmt = $pdo->query('SELECT * FROM address_book');
 while ($row = $stmt->fetch()) {
     echo "{$row['sid']} {$row['name']}  {$row['address']} <br>";
 }
+ 
