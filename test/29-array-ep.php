@@ -15,7 +15,13 @@ $p1['name'] = '比爾';
 // 
 echo '$p2: ';
 echo json_encode($p2, JSON_UNESCAPED_UNICODE) . '<br>';
+// $p2: {"name":"Bill","age":27,"gender":"male"}
+
+
 echo '$p1: ';
 echo json_encode($p1, JSON_UNESCAPED_UNICODE) . '<br>';
+// $p1: {"name":"比爾","age":27,"gender":"male"}
+
 echo '$p3: ';
 echo json_encode($p3, JSON_UNESCAPED_UNICODE) . '<br>';
+// $p3: {"name":"比爾","age":27,"gender":"male"}

@@ -12,4 +12,5 @@
     <!-- 此處可在php檔做更改 -->
     <title><?= $title ?? '我的首頁' ?></title>
     <link rel="stylesheet" href="<?= WEB_ROOT ?>/test/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="<?= WEB_ROOT ?>/fontawesome/css/all.css">
 </head>
