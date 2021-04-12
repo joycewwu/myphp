@@ -2,7 +2,7 @@
 <?php
 $title = '新增資料';
 $pageName = 'ab-insert'
-
+ 
 ?>
 <?php include __DIR__ . '/parts/html-head.php'; ?>
 <?php include __DIR__ . '/parts/navbar.php'; ?>
