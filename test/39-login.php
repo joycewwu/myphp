@@ -49,7 +49,7 @@ if (isset($_POST['account']) and isset($_POST['password'])) {
         <?php endif; ?>
 
     </div>
-
+ 
 
 </div>
 <?php include __DIR__ . '/parts/scripts.php'; ?>
