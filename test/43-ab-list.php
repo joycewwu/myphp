@@ -80,7 +80,7 @@ $rows = $pdo->query($sql)->fetchAll();
         </tbody>
     </table>
 </div>
-
+ 
 <?php include __DIR__ . '/parts/scripts.php'; ?>
 <script>
     $('.trash').click(function() {
