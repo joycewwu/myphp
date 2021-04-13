@@ -85,7 +85,7 @@ $pageName = 'ab-insert'
             el.css('border', '1px solid #CCCCCC');
             // 檢查後框框變
             el.next().text('');
-            //檢查後回傳空字串，取消 
+            //檢查後回傳空字串，取消
         });
 
         // 反向思考，先假設is true，若遇到false在判斷
@@ -107,21 +107,14 @@ $pageName = 'ab-insert'
             $mobile.css('border', '1px solid red');
             $mobile.next().text('請輸入正確的手機號碼');
         }
-
         if (isPass) {
-            $.post(
-                '46-ab-insert-api.php',
-                $(document.form1).serialize(),
-                function(data) {
-                    if (data.sucess) {
-                        alert('資料新增成功');
-                    }
-                },
-                'json'
-            )
+            $.post('46-ab-insert-api.php', $(document.form1).serialize(), function(data) {
+                if (data.sucess) {
+                    alert('資料新增成功');
+                }
+            }, 'json')
         }
-
-
     }
 </script>
+<?php include __DIR__ . '/parts/html-foot.php'; ?>
 <?php include __DIR__ . '/parts/html-foot.php'; ?>
