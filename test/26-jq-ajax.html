@@ -22,9 +22,11 @@
             });
     </script> -->
 
+    <!-- jQuery.get( url [, data ] [, success ] [, dataType ] ) -->
+
     <script>
         $.get('25-array-json.php',
-            function(data) {
+            function (data) {
                 console.log(data);
                 $('#result').text(data);
             }, 'json');
