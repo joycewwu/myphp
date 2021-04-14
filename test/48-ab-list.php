@@ -59,15 +59,14 @@ $rows = $pdo->query($sql)->fetchAll();
                 <th scope="col">Mobile</th>
                 <th scope="col">Birthday</th>
                 <th scope="col">Address</th>
-                <th scope="col"><i class="fas fa-edit"></i></th>
+
             </tr>
         </thead>
         <tbody>
             <?php foreach ($rows as $r) : ?>
                 <tr>
                     <td class="trash">
-                        <!-- <a href="47-ab-delete.php?sid=<?= $r['sid'] ?>"> -->
-                        <a href="javascript:delete_it(<?= $r['sid'] ?>)">
+                        <a href="46-ab-delete.php?sid=<?= $r['sid'] ?>">
                             <i class="fas fa-trash-alt"></i>
                         </a>
                     </td>
@@ -76,15 +75,7 @@ $rows = $pdo->query($sql)->fetchAll();
                     <td><?= $r['email'] ?></td>
                     <td><?= $r['mobile'] ?></td>
                     <td><?= $r['birthday'] ?></td>
-                    <td><?= htmlentities($r['address']) ?>
-                        <?php // echo '<br>'. strip_tags($r['address']) 
-                        ?>
-                    </td>
-                    <td>
-                        <a href="49-ab-edit.php?sid=<?= $r['sid'] ?>">
-                            <i class="fas fa-edit"></i>
-                        </a>
-                    </td>
+                    <td><?= $r['address'] ?></td>
 
                 </tr>
             <?php endforeach; ?>
@@ -94,10 +85,8 @@ $rows = $pdo->query($sql)->fetchAll();
 
 <?php include __DIR__ . '/parts/scripts.php'; ?>
 <script>
-    function delete_it(sid) {
-        if (confirm(`確定要刪除編號為 ${sid} 的資料嗎?`)) {
-            location.href = '47-ab-delete.php?sid=' + sid;
-        }
-    }
+    // $('.trash').click(function() {
+    //     $(this).closest('tr').remove();
+    // });
 </script>
 <?php include __DIR__ . '/parts/html-foot.php'; ?>
