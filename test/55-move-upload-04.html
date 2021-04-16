@@ -27,14 +27,13 @@
 
         avatar.addEventListener('change', function () {
             const fd = new FormData(document.form1);
-            // 定義fd，將有樣式的表單轉為指儲存資料的表單 FormData，在回傳 (fetch)到'53-move-upload-02.php'
+            // 定義一筆資ㄌㄧㄠ，將有樣式的表單轉為指儲存資料的表單 FormData，在回傳 (fetch)到'53-move-upload-02.php'
 
             fetch('53-move-upload-02.php', { // 傳送的對象
                 method: 'POST',   // 傳送的方式
                 body: fd // 傳送的資料
             })
-                // r = response;回傳成json格式
-                .then(r => r.json())
+                .then(r => r.json()) // r = response;回傳成json格式 
                 .then(obj => {
                     if (obj.success) {
                         document.querySelector('#myimg').src = 'imgs/' + obj.filename;

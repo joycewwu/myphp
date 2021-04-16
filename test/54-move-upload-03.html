@@ -13,7 +13,8 @@
 <body>
 
     <form action="53-move-upload-02.php" method="post" enctype="multipart/form-data">
-        <input type="file" name="avatar">
+        <input type="file" name="avatar[] multiple">
+        <!-- 如果要加上多個檔案，就得加上中括號， name="avatar[] multiple"-->
         <br>
         <input type="submit">
     </form>

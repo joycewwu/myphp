@@ -1,4 +1,9 @@
 <?php
+/*
+php 上傳檔案有指定變數 $_FILES
+上傳多個檔案要加中括號 []，例: key = avatar[]
+*/
+
 
 if (isset($_FILES['avatar'])) {
     echo json_encode($_FILES['avatar']);
@@ -18,8 +23,8 @@ $_FILES['avatar']['name'];
 {
     "name": [
         "1.png",
-        "3.png",
-        "4.png"
+        "2.png",
+        "3.png"
     ],
     "type": [
         "image/png",
@@ -27,9 +32,9 @@ $_FILES['avatar']['name'];
         "image/png"
     ],
     "tmp_name": [
-        "C:\\xampp\\tmp\\php7F73.tmp",
-        "C:\\xampp\\tmp\\php7F74.tmp",
-        "C:\\xampp\\tmp\\php7F75.tmp"
+        "C:\\xampp\\tmp\\phpB4F9.tmp",
+        "C:\\xampp\\tmp\\phpB4FA.tmp",
+        "C:\\xampp\\tmp\\phpB4FB.tmp"
     ],
     "error": [
         0,
@@ -38,10 +43,9 @@ $_FILES['avatar']['name'];
     ],
     "size": [
         49648,
-        39472,
-        39932
+        41099,
+        39472
     ]
 }
-
 
  */
