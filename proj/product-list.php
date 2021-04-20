@@ -127,7 +127,13 @@ $rows = $pdo->query($p_sql)->fetchAll();
         const pid = card.attr('data-sid');
         const qty = card.find('select').val();
 
-        console.log({pid, qty}, card.find('.card-title').text());
+        // console.log({pid, qty}, card.find('.card-title').text());
+
+        $.get('cart-api.php', {action:'add', pid, qty}, function(data){
+            console.log(data);
+            showCartCount(data);  // 更新選單上數量的提示
+        }, 'json');
+
     })
 
 
