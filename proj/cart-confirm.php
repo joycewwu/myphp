@@ -3,7 +3,7 @@
 $title = '感謝購買';
 $pageName = 'cart-confirm';
 
-// 未登入狀態或是購物車為0，至 product-list 頁面
+// 未登入狀態或是購物車為0，至 product-list 頁面 
 if (
     !isset($_SESSION['user'])
     or
